@@ -9,3 +9,64 @@ body{
     sans-serif;
 
 }
+
+/* цвет основного текста #212121 */
+/* вторичный цвет текста  #757575*/
+/* цвет инфо текста rgba(255, 255, 255, 0.6) */
+/* акцент #2196F3 */
+/* белый #FFFFFF  */
+/* черный #000000  */
+
+:root {
+    --primary-text-color: #212121;
+    --desc-text-color: #757575;
+    --info-text-color: rgba(255, 255, 255, 0.6);
+    --accent-color: #2196F3;
+    --primary-white-color: #ffffff;
+    --primary-black-color: #000000;
+}
+
+body {
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+
+    font-family: Montserrat, sans-serif;
+    letter-spacing: -0.015em;
+    font-size: 18px;
+    line-height: 1.67;
+}
+
+/* Logo */
+
+.logo {
+    color: var(--title-text-color);
+    font-family: Comfortaa, cursive;
+
+    font-size: 28px;
+    line-height: 1.14;
+    text-decoration: none;
+}
+
+.logo:hover {
+    color: var(--accent-color);
+}
+
+/* Site nav */
+
+.site-nav .link {
+    color: var(--accent-color);
+
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--title-text-color);
+}
+
+.site-nav .link.current {
+    color: var(--title-text-color);
+}

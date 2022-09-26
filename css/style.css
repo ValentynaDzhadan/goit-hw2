@@ -8,22 +8,17 @@
     --desc-text-color: #757575;
     --info-text-color: rgba(255, 255, 255, 0.6);
     --accent-color: #2196F3;
-    
 }
 
 .list {
     list-style: none;
 }
-
 .link {
     text-decoration: none;
 }
-
 button {
     cursor: pointer;
-
 }
-
 body {
     background-color: white;
     color: var(--primary-text-color);
@@ -67,43 +62,74 @@ body {
     color: var(--accent-color);
 }
 
-
- /* FOOTER */
-.footer{
-     background-color: #2F303A;;
+/* HERO */
+.hero{
+    text-align: center;
+    letter-spacing: 0.06em;
+    background-color: #2F303A;
 }
-.footer-logo{
+.hero-title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform: uppercase;
     color: #ffffff;
 }
-.contact-item{
-    font-style: normal;
+.hero-btn{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    background-color: var(--accent-color);
+    color: #ffffff;
+}
+
+/* FEATURE */
+.feature-sub-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+.feature-text{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+    color: var(--desc-text-color);
 }
-.contact-address{
-    color: #ffffff;
+
+/* TEAM */
+.title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
 }
-.contact-phone, .contact-email{
-    color: var(--info-text-color);
+.staff{
+    font-size: 16px;
+    line-height: 1.19;
+}
+.staff-title{
+    font-weight: 500;
+}
+.staff-position{
+    font-weight: 400;
+    color: var(--desc-text-color);
 }
 
 /* PORTFOLIO */
-.filters-btn{
+.filters-btn {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    background-color: ##F5F4FA;
+    background-color: #F5F4FA;
 }
-
 .filters-btn:hover,
 .filters-btn:focus {
     background-color: var(--accent-color);
     color: #ffffff;
 }
-
-.project-title{
+.project-title {
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -111,14 +137,31 @@ body {
     letter-spacing: 0.06em;
     color: var(--primary-text-color);
 }
-
-.project-text{
+.project-text {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
     color: var(--desc-text-color);
-
-
 }
 
+/* FOOTER */
+.footer {
+    background-color: #2F303A;
+}
+.footer-logo {
+    color: #ffffff;
+}
+.contact-item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+.contact-address {
+    color: #ffffff;
+}
+.contact-phone,
+.contact-email {
+    color: var(--info-text-color);
+}

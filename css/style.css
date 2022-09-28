@@ -4,11 +4,35 @@
 /* акцент #2196F3 */
 
 :root {
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
     --primary-text-color: #212121;
     --desc-text-color: #757575;
     --info-text-color: rgba(255, 255, 255, 0.6);
     --accent-color: #2196F3;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+/* img {
+    display: block;
+} */
 
 .list {
     list-style: none;
@@ -25,19 +49,64 @@
 body {
     background-color: white;
     color: var(--primary-text-color);
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--primary-font);
     font-style: normal;
     letter-spacing: 0.03em;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
 
-/* HEADER */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section {
+    padding: 94px 0;
+}
+
+
+/* ==================== COMPONENTS ==================== */
+
+
+
+
+/* ==================== HEADER ==================== */
 
 .header{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    padding: 32px 0;
+}
+
+.header-container{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.header-nav{
+    display: flex;
+    column-gap: 93px;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    column-gap: 50px;
 }
 
 .header-logo {
@@ -45,7 +114,7 @@ body {
 }
 
 .logo{
-    font-family: 'Raleway';
+    font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -59,19 +128,35 @@ body {
     color: var(--primary-text-color);
 }
 
+.menu-link:hover,
+.menu-link:focus {
+    color: var(--accent-color);
+}
+
 .current{
     color: var(--accent-color);
 }
 
-.header-email, .header-phone-number {
+.header-phone-number {
     color: var(--desc-text-color);
 }
 
-.menu-link:hover, .menu-link:focus,
-.header-email:hover, .header-email:focus,
-.header-phone-number:hover, .header-phone-number:focus{
+.header-phone-number:hover,
+.header-phone-number:focus {
     color: var(--accent-color);
 }
+
+.header-email{
+    color: var(--desc-text-color);
+    margin-right: 50px;
+}
+
+.header-email:hover,
+.header-email:focus {
+    color: var(--accent-color);
+}
+
+
 
 
 /* HERO */

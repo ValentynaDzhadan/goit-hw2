@@ -92,6 +92,7 @@ body {
     font-size: 26px;
     line-height: 1.19;
 }
+/* ==================== /COMPONENTS ==================== */
 
 /* ==================== HEADER ==================== */
 .header{
@@ -158,6 +159,7 @@ body {
 .header-email:focus {
     color: var(--accent-color);
 }
+/* ==================== /HEADER ==================== */
 
 /* ==================== HERO ==================== */
 .hero{
@@ -195,8 +197,9 @@ body {
 .hero-btn:hover,
 .hero-btn:focus{
     background-color: var(--accent-color);
-
 }
+/* ==================== /HERO ==================== */
+
 
 /* ==================== FEATURE ==================== */
 .feature-list{
@@ -223,6 +226,8 @@ body {
     line-height: 1.71;
     color: var(--desc-text-color);
 }
+/* ==================== /FEATURE ==================== */
+
 
 /* ==================== FIELD ==================== */
 .field{
@@ -238,6 +243,8 @@ body {
 .field-item {
     flex-basis: calc((100% - 60px) / 3);
 }
+/* ==================== /FIELD ==================== */
+
 
 /* ==================== TEAM ==================== */
 .team{
@@ -274,6 +281,8 @@ body {
     font-weight: 400;
     color: var(--desc-text-color);
 }
+/* ==================== /TEAM ==================== */
+
 
 /* ==================== PORTFOLIO ==================== */
 .filters-btn {
@@ -306,6 +315,8 @@ body {
     line-height: 1.88;
     color: var(--desc-text-color);
 }
+/* ==================== /PORTFOLIO ==================== */
+
 
 /* ==================== FOOTER ==================== */
 .footer {
@@ -343,3 +354,4 @@ body {
 .contact-email {
     color: var(--info-text-color);
 }
+/* ==================== /FOOTER ==================== */
